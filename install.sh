@@ -88,7 +88,7 @@ else
     echo "libsodium已安装!"
 fi
 cd /usr/local
-git clone https://github.com/Readour/shadowsocksr.git
+git clone https://github.com/Terry1002/shadowsocksr.git
 cd ./shadowsocksr
 git checkout manyuser
 git pull
@@ -122,7 +122,7 @@ if [ -e /usr/local/bin/ssr ];then
         mv /usr/local/shadowsocksr/mudb.json /usr/local/mudb.json
         rm -rf /usr/local/shadowsocksr
         cd /usr/local
-        git clone https://github.com/Readour/shadowsocksr.git
+        git clone https://github.com/Terry1002/shadowsocksr.git
         if [[ $1 == develop ]];then
             cd ./shadowsocksr
             git checkout stack/dev
@@ -150,7 +150,7 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
     if [[ $yn == [yY] ]];then
         rm -rf /usr/local/SSR-Bash-Python
         cd /usr/local
-        git clone https://github.com/Readour/AR-B-P-B.git
+        git clone https://github.com/Terry1002/AR-B-P-B.git
         mv AR-B-P-B SSR-Bash-Python
     fi
     cd /usr/local/SSR-Bash-Python
@@ -162,7 +162,7 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
     fi
 else
     cd /usr/local
-    git clone https://github.com/Readour/AR-B-P-B.git
+    git clone https://github.com/Terry1002/AR-B-P-B.git
     cd AR-B-P-B
     git checkout master
     if [[ $1 == "develop" ]];then
@@ -244,10 +244,10 @@ fi
 
 #Install SSR-Bash Background
 if [[ $1 == "develop" ]];then
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/readour/AR-B-P-B/develop/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/Terry1002/AR-B-P-B/develop/ssr
 	chmod +x /usr/local/bin/ssr
 else
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/readour/AR-B-P-B/master/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/Terry1002/AR-B-P-B/master/ssr
 	chmod +x /usr/local/bin/ssr
 fi
 
